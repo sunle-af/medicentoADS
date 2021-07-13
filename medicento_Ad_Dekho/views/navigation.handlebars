@@ -1,0 +1,26 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200&display=swap');
+</style>
+<ul class="uk-nav uk-nav-default tm-nav">
+  <li class="uk-nav-header">
+    <h4 style="color:black; font-family: Montserrat;" class="uk-margin-remove uk-text-light"> Administrator </h4>
+  </li>
+  <li>
+    <a href="/">
+      
+      <span class="uk-text-bottom"> <h5 style="color:black; font-family: Montserrat;" class="uk-margin-remove uk-text-light"> <span uk-icon="home" class="uk-icon"></span> Dashboard </h5> </span>            
+    </a>
+  </li>
+  <li class="uk-parent">
+    <a href="/publisher/list">
+      <span class="uk-text-middle">  <h5 style="color:black; font-family: Montserrat;" class="uk-margin-remove uk-text-light"> <span uk-icon="desktop" class="uk-icon"></span> Publishers </h5> </span>
+    </a>
+    {{ publishersAndZones publishers }}
+  </li>
+  <li class="uk-parent">
+    <a href="/advertiser/list">
+      <span class="uk-text-middle">  <h5 style="color:black; font-family: Montserrat;" class="uk-margin-remove uk-text-light"> <span uk-icon="users" class="uk-icon"></span>Advertisers </h5> </span>
+    </a>
+    {{ advertisersAndCampaigns advertisers }}
+  </li>
+</ul>
